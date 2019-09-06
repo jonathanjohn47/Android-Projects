@@ -28,6 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="yesclick"
                 android:text="Yes" />
 
             <RadioButton
@@ -35,6 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="maybeclick"
                 android:text="Maybe" />
 
             <RadioButton
@@ -42,6 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="noclick"
                 android:text="No" />
         </RadioGroup>
 
