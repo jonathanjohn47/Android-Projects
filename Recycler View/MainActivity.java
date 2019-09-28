@@ -24,12 +24,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         listItems = new ArrayList<>();
-
+        
+        //------Data goes here--------------
         for (int i=0; i<100; i++){
             ListItem listitem = new ListItem("First Name " + i, "Last Name " + i, i);
             listItems.add(listitem);
         }
-
+        //----------------------------------
         adapter = new Adapter(listItems, this);
         recyclerView.setAdapter(adapter);
     }
