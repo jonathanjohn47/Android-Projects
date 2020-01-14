@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        app:srcCompat="@mipmap/akal_academy_app_icon" />
+
+    <EditText
+        android:id="@+id/edtStudentsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Name of the Student"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColorHint="@color/colorTextHint" />
+
+    <EditText
+        android:id="@+id/edtNameVisitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Name of the Visitor"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColorHint="@color/colorTextHint" />
+
+    <EditText
+        android:id="@+id/edtClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Class"
+        android:inputType="number"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColorHint="@color/colorTextHint" />
+
+    <EditText
+        android:id="@+id/edtSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Section"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColorHint="@color/colorTextHint" />
+
+    <EditText
+        android:id="@+id/edtRollNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Roll No."
+        android:inputType="number"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColorHint="@color/colorTextHint" />
+
+    <EditText
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="10-Digit Phone Number"
+        android:inputType="phone"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColorHint="@color/colorTextHint" />
+
+    <Button
+        android:id="@+id/btnVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_style"
+        android:text="Verify"
+        android:textColor="@color/colorPrimaryDark" />
+
+</LinearLayout>
