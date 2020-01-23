@@ -9,7 +9,7 @@ public void onClick(View view) {
             Date date;
             try {
                 date = dt.parse(date_s);
-                SimpleDateFormat dt1 = new SimpleDateFormat("dd-MMM-yyyy");
+                SimpleDateFormat dt1 = new SimpleDateFormat("dd-MMM-yyyy"); //Replace your own date format here
                 mSelectDate.setText(dt1.format(date));
             } catch (ParseException e) {
                 Log.e("error", e+"");
