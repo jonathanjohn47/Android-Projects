@@ -6,7 +6,7 @@
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_CALL_LOG,
                     Manifest.permission.READ_PHONE_STATE}, 1);
         }
-    }
+}
     
 @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
