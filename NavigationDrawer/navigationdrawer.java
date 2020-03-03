@@ -9,6 +9,8 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 
 private void setupNavigationDrawer() {
+        drawerLayout = findViewById(R.id.main_activity_drawerlayout);
+        navigationView = findViewById(R.id.navigation_menu);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
