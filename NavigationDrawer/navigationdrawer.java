@@ -3,46 +3,27 @@ private DrawerLayout drawerLayout;
 private NavigationView navigationView;
 private ActionBarDrawerToggle actionBarDrawerToggle;
 
+protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setupNavigationDrawer();
+}
+
 private void setupNavigationDrawer() {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
-                    case R.id.nav_change_prize:{
-                        Log.e("TAG", "Change Prize");
-                        startActivity(new Intent(MainActivity.this, ChangePrizeActivity.class));
+                    case R.id.Item1:{
+                        //TODO: action
                         break;
                     }
-                    case R.id.nav_logout:{
-                        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-                        SharedPreferences.Editor editor = sharedPreferences.edit();
-                        editor.putString("username", "NULL");
-                        editor.putString("password", "NULL");
-                        editor.commit();
-                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
-                        finish();
+                    case R.id.item2:{
+                        //TODO: action 
                         break;
                     }
-                    case R.id.change_password:{
-                        changePassword = new ChangePassword(MainActivity.this);
-                        changePassword.setCancelable(false);
-                        changePassword.setOnChangePassword(new ChangePassword.onChangePassword() {
-                            @Override
-                            public void onSubmit(String oldpassword, String newpassword) {
-                                if (checkIfOldPasswordIsCorrect(oldpassword)){
-                                    changeThePassword(newpassword);
-                                }
-                                else{
-                                    makeDialog("Error", "Could Not Update Password", false);
-                                }
-                            }
-
-                            @Override
-                            public void onCancel() {
-                                changePassword.dismiss();
-                            }
-                        });
-                        changePassword.show();
+                    case R.id.item3:{
+                        //TODO: logout
+                        break;
                     }
                 }
                 return false;
