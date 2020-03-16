@@ -32,11 +32,11 @@ public class PageAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:{
-                AttendanceFragment attendanceFragment = new AttendanceFragment();
+                AttendanceFragment attendanceFragment = new AttendanceFragment(); //Create a fragment in traditional way and initiate it here
                 return attendanceFragment;
             }
             case 1: {
-                HomeWorkFragment homeWorkFragment = new HomeWorkFragment();
+                HomeWorkFragment homeWorkFragment = new HomeWorkFragment(); //Create a fragment in traditional way and initiate it here
                 return homeWorkFragment;
             }
             default:{
